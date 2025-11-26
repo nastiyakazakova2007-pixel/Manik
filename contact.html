@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | NailPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-hand-sparkles me-2"></i>
+                <span class="brand-text">NailPro</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Услуги</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Заспись</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой секция страницы -->
+    <section class="page-header py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Контакты и запись</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навигация по странице -->
+    <section class="py-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-nav text-center">
+                        <a href="#contacts" class="btn btn-outline-primary mx-1">Контакты</a>
+                        <a href="#booking" class="btn btn-outline-primary mx-1">Онлайн запись</a>
+                        <a href="#location" class="btn btn-outline-primary mx-1">Как добраться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="py-5" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <h2 class="mb-4">Свяжитесь с нами</h2>
+                    <div class="contact-info">
+                        <div class="contact-item d-flex mb-3">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h5>Адрес</h5>
+                                <p>г. Москва, ул. Примерная, д. 123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h5>Телефон</h5>
+                                <p>+7 (999) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@nailartstudio.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-clock text-primary"></i>
+                            </div>
+                            <div>
+                                <h5>График работы</h5>
+                                <p>Пн-Пт: 9:00 - 20:00<br>Сб-Вс: 10:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-placeholder bg-light rounded p-5 text-center">
+                        <i class="fas fa-map-marked-alt fa-5x text-primary mb-3"></i>
+                        <h4>Карта проезда</h4>
+                        <p>Мы находимся в центре города, рядом с метро "Примерная"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section class="py-5 bg-light" id="booking">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-5">Онлайн запись</h2>
+                    <form id="booking-form" action="https://formspree.io/f/mvojzpyz" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="client-name" class="form-label">Ваше имя *</label>
+                                <input type="text" class="form-control" id="client-name" name="client-name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="client-phone" class="form-label">Телефон *</label>
+                                <input type="tel" class="form-control" id="client-phone" name="client-phone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service-type" class="form-label">Выберите услугу *</label>
+                            <select class="form-select" id="service-type" name="service-type" required>
+                                <option value="" selected disabled>-- Выберите услугу --</option>
+                                <option value="classic-manicure">Классический маникюр</option>
+                                <option value="apparatus-manicure">Аппаратный маникюр</option>
+                                <option value="european-manicure">Европейский маникюр</option>
+                                <option value="gel-coating">Покрытие гель-лаком</option>
+                                <option value="french">Френч</option>
+                                <option value="design">Сложный дизайн</option>
+                                <option value="extension">Наращивание ногтей</option>
+                                <option value="strengthening">Укрепление ногтей</option>
+                                <option value="spa">SPA-уход для рук</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="booking-date" class="form-label">Желаемая дата *</label>
+                            <input type="date" class="form-control" id="booking-date" name="booking-date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Предпочтительное время *</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="booking-time" id="time-morning" value="morning" required>
+                                    <label class="form-check-label" for="time-morning">Утро (9:00 - 12:00)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="booking-time" id="time-day" value="day">
+                                    <label class="form-check-label" for="time-day">День (12:00 - 17:00)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="booking-time" id="time-evening" value="evening">
+                                    <label class="form-check-label" for="time-evening">Вечер (17:00 - 20:00)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nail-count" class="form-label">Количество ногтей для дизайна</label>
+                            <input type="number" class="form-control" id="nail-count" name="nail-count" min="0" max="10" value="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Дополнительные пожелания</label>
+                            <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Записаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как добраться -->
+    <section class="py-5" id="location">
+        <div class="container">
+            <h2 class="text-center mb-5">Как добраться</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-subway fa-3x text-primary mb-3"></i>
+                            <h4>На метро</h4>
+                            <p>Станция метро "Примерная", выход №4. Далее 5 минут пешком.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bus fa-3x text-primary mb-3"></i>
+                            <h4>На автобусе</h4>
+                            <p>Автобусы №123, 456 до остановки "Улица Примерная".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Nail Art Studio</h5>
+                    <p>Профессиональный маникюр и дизайн ногтей</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <p>Email: info@nailartstudio.ru</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2023 Nail Art Studio. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
