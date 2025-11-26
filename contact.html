@@ -129,7 +129,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <h2 class="text-center mb-5">Онлайн запись</h2>
-                    <form id="booking-form" action="https://www.google.com/" method="GET">
+                    <form id="booking-form" onsubmit="return redirectToGoogle(event)">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="client-name" class="form-label">Ваше имя *</label>
@@ -263,5 +263,6 @@ function redirectToGoogle(event) {
 </body>
 
 </html>
+
 
 
