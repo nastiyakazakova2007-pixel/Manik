@@ -132,64 +132,65 @@
                 <div class="col-lg-8">
                     <h2 class="text-center mb-5">Онлайн запись</h2>
                     <form id="booking-form">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="client-name" class="form-label">Ваше имя *</label>
-                                <input type="text" class="form-control" id="client-name" name="client-name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="client-phone" class="form-label">Телефон *</label>
-                                <input type="tel" class="form-control" id="client-phone" name="client-phone" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="service-type" class="form-label">Выберите услугу *</label>
-                            <select class="form-select" id="service-type" name="service-type" required>
-                                <option value="" selected disabled>-- Выберите услугу --</option>
-                                <option value="classic-manicure">Классический маникюр</option>
-                                <option value="apparatus-manicure">Аппаратный маникюр</option>
-                                <option value="european-manicure">Европейский маникюр</option>
-                                <option value="gel-coating">Покрытие гель-лаком</option>
-                                <option value="french">Френч</option>
-                                <option value="design">Сложный дизайн</option>
-                                <option value="extension">Наращивание ногтей</option>
-                                <option value="strengthening">Укрепление ногтей</option>
-                                <option value="spa">SPA-уход для рук</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="booking-date" class="form-label">Желаемая дата *</label>
-                            <input type="date" class="form-control" id="booking-date" name="booking-date" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Предпочтительное время *</label>
-                            <div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="booking-time" id="time-morning" value="morning" required>
-                                    <label class="form-check-label" for="time-morning">Утро (9:00 - 12:00)</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="booking-time" id="time-day" value="day">
-                                    <label class="form-check-label" for="time-day">День (12:00 - 17:00)</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="booking-time" id="time-evening" value="evening">
-                                    <label class="form-check-label" for="time-evening">Вечер (17:00 - 20:00)</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="nail-count" class="form-label">Количество ногтей для дизайна</label>
-                            <input type="number" class="form-control" id="nail-count" name="nail-count" min="0" max="10" value="0">
-                        </div>
-                        <div class="mb-3">
-                            <label for="comments" class="form-label">Дополнительные пожелания</label>
-                            <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="button" onclick="submitAndRedirect()" class="btn btn-primary btn-lg">Записаться</button>
-                        </div>
-                    </form>
+                        <form id="booking-form">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="client-name" class="form-label">Ваше имя *</label>
+            <input type="text" class="form-control" id="client-name" name="client-name" required value="Иванова Мария">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="client-phone" class="form-label">Телефон *</label>
+            <input type="tel" class="form-control" id="client-phone" name="client-phone" required value="+7 (999) 123-45-67">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="service-type" class="form-label">Выберите услугу *</label>
+        <select class="form-select" id="service-type" name="service-type" required>
+            <option value="" selected disabled>-- Выберите услугу --</option>
+            <option value="classic-manicure" selected>Классический маникюр</option>
+            <option value="apparatus-manicure">Аппаратный маникюр</option>
+            <option value="european-manicure">Европейский маникюр</option>
+            <option value="gel-coating">Покрытие гель-лаком</option>
+            <option value="french">Френч</option>
+            <option value="design">Сложный дизайн</option>
+            <option value="extension">Наращивание ногтей</option>
+            <option value="strengthening">Укрепление ногтей</option>
+            <option value="spa">SPA-уход для рук</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="booking-date" class="form-label">Желаемая дата *</label>
+        <input type="date" class="form-control" id="booking-date" name="booking-date" required value="2023-12-15">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Предпочтительное время *</label>
+        <div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="booking-time" id="time-morning" value="morning">
+                <label class="form-check-label" for="time-morning">Утро (9:00 - 12:00)</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="booking-time" id="time-day" value="day" checked>
+                <label class="form-check-label" for="time-day">День (12:00 - 17:00)</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="booking-time" id="time-evening" value="evening">
+                <label class="form-check-label" for="time-evening">Вечер (17:00 - 20:00)</label>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="nail-count" class="form-label">Количество ногтей для дизайна</label>
+        <input type="number" class="form-control" id="nail-count" name="nail-count" min="0" max="10" value="5">
+    </div>
+    <div class="mb-3">
+        <label for="comments" class="form-label">Дополнительные пожелания</label>
+        <textarea class="form-control" id="comments" name="comments" rows="3">Хотелось бы нежный дизайн с блестками</textarea>
+    </div>
+    <div class="text-center">
+        <button type="button" onclick="submitAndRedirect()" class="btn btn-primary btn-lg">Записаться</button>
+    </div>
+</form>
                 </div>
             </div>
         </div>
@@ -287,6 +288,7 @@
     </script>
 </body>
 </html>
+
 
 
 
